@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资源标签</title>
+</head>
+<body>
+	&amp;nbsp;-->可以参考：<a href="http://www.w3school.com.cn/html/html_entities.asp">HTML 字符实体</a>
+	<!-- 嵌入资源 -->
+	<div>
+		<h2>嵌入资源标签</h2>
+		<p>img、iframe、object、embed、video、audio</p>
+		<!-- 图片标签 -->
+		<div>
+			&lt;img src="../images/sphoto.png" alt="对图片描述说明"&gt; &nbsp;&nbsp;&nbsp;&nbsp;img标签为自闭合标签
+		</div>
+		<!-- 嵌入页面 -->
+		<div>
+			<p>第三方广告页面。。<br>使用iframe嵌入页面标签:</p>
+			&lt;iframe src="第三方页面地址" frameborder="0"&gt;&lt;/iframe&gt;
+		</div>
+
+		<!-- 嵌入插件 -->
+		<object data="" type="appliction/x-shockwave-flash"><!-- 插件类型 -->
+			<param name="movie" value="http://pdfReader.swf"><!-- 播放器插件地址 -->
+			<param name="flashvars" value="http://book.pdf">
+			<!-- 文件地址 -->
+		</object>
+		<!-- 下面的ie8以下的不兼容 -->
+		<object data="http://pdfReader.swf" type="appliction/x-shockwave-flash">
+			<param name="flashvars" value="http://book.pdf">
+		</object>
+
+		<embed src="http://pdfReader.swf" type="appliction/x-shockwave-flash" width="640" height="480"><!-- type写上插件的类型，src写上文件的地址 -->
+	</div>
+	<!-- 视频标签 -->
+
+	<div>
+		<!-- autoplay自动进播放，一进来页面就播放视频 -->
+		<!-- loop重复播放 -->
+		<video autoplay controls="controls" poster="./res/poster.png">
+		<!-- controls设置控制条，controls可以不带属性值单独写；poster显示视频封面 -->
+			<source src="move.mp4" type="video/mp4">
+			<source src="move.webm" type="video/webm">
+			<source src="move.ogg" type="video/ogg">
+			<track kind="subtitles" src="video.srt" label="English"></track>
+			您的浏览器不支持video标签。
+		</video>
+		<!-- audio标签与video标签类似 -->
+	</div>
+
+	<!-- 嵌入图形图像... -->
+	<div>
+		<h1>图：canvas标签、svg标签</h1>
+		<h1>热点区域map标签、area标签</h1>
+	</div>
+</body>
+</html>

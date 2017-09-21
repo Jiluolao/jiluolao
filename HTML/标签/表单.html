@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form action="/login" method="post"><!-- action:提交表单的后台地址，method表单提交方式 -->
+		<!-- 表单内容分区 -->
+		<fieldset>
+			<!-- 表单分区里的标题 -->
+			<legend>照片选择</legend>
+			<label for="file">选择照片</label><input type="file" id="file" name="file">
+		</fieldset>
+		
+		<fieldset>
+			<legend>综合设置</legend>
+
+			<!-- 多选框checkbox -->
+			<!-- name数据的名称，提交数据用的；值value； -->
+			<div>尺寸选择：</div>
+			<div>
+				<!-- checked默认选中 -->
+				<!-- disabled禁止选中 -->
+				<input class="cb" type="checkbox" name="size" id="cb_0" value="5" checked><label for="cb_0">5寸</label>
+				<input class="cb" type="checkbox" name="size" id="cb_1" value="6"><label for="cb_1">6寸</label>
+			</div>
+
+			<div>选择相纸：</div>
+			<div>
+			<!-- 单选框radio -->
+				<input class="rd" type="radio" name="material" id="rd_0" value="fushi"><label for="rd_0">富士康</label>
+				<input class="rd" type="radio" name="material" id="rd_1" value="keda"><label for="rd_1">柯达</label>
+			</div>
+
+			<!-- 下拉菜单 -->
+			<div>
+				<!-- selected默认选中 -->
+				<label for="delivery">配送方式：</label><!-- for与id的值要一对相同 -->
+				<select name="delivery" id="delivery">
+					<!-- optgroup分组 -->
+					<optgroup label="民营">
+						<option value="0">顺丰</option>
+						<option value="1" selected>圆通</option>
+					</optgroup>
+					<optgroup label="国企">
+						<option value="2">EMS</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<!-- 文本框 -->
+				<label for="description">商品描述：</label>
+				<!-- readonly可以让文本框只能读不能写，hidden隐藏数据 -->
+				<input type="text" name="description" id="description" placeholder="输入提示" value="默认值" >
+			</div>
+			<div>
+				<label for="feedback">意见反馈：</label>
+				<textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+			</div>
+			
+			
+		</fieldset>
+		<!-- <input type="submit">提交
+		<input type="reset">重置 -->
+		<!-- 语义化写法 -->
+		<div>
+			<button type="submit">提交</button>
+			<button type="reset">重置</button>
+		</div>
+	</form>
+	<h3>html5中的input type的新类型：</h3><p>email、url、number、tel、search、range、color</p>
+	<p>date picker(date,month,week,time,datetime,datetime-local)</p>
+</body>
+</html>

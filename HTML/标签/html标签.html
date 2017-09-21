@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html标签</title>
+	<style>
+		iframe{
+			margin: 50px;
+			border: 1px solid #ccc;
+		}
+		#box{
+			width: 500px;
+			height: 900px;
+			margin: 0 auto;
+			border: 2px solid #000;
+			background: #ccc;
+		}
+		#nav{
+			width: 900px;
+			height: 300px;
+			margin: 0 auto;
+			border: 2px solid #000;
+			background: #666;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 超链接a标签 -->
+	<div id="top">
+		<!-- <img src="元素表.png" alt="" width="980px">图片标签 -->
+		<h1>标题标签h1~h6</h1>
+		<h1>超链接a标签</h1><!-- a标签是内联样式，内联元素 -->
+		<a href="http://jiluolao.github.io/test">jiluolao</a>
+		<a href="http://jiluolao.github.io/test" target="_blank">jiluolao</a><!-- 网站在新窗口打开 -->
+		<a href="http://jiluolao.github.io/test" target="_self">jiluolao</a><!-- 网站在原本窗口打开 -->
+		<a href="http://jiluolao.github.io/test" target="inner">jiluolao</a><!-- 网站在原本窗口打开 -->
+	</div>
+	<iframe frameborder="0" name="inner"></iframe><!-- name的属性值要与target的值一样 -->
+	<!-- <iframe src="" frameborder="0"></iframe> -->
+	<!-- 创建一个文档内部锚点 -->
+	<div>
+		<h2>创建一个文档内部锚点</h2>
+		<a href="#box">盒子</a><br><a href="#nav">导航栏</a>
+		<div id="box">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<a href="#top">top</a>
+	</div>
+	<!-- 邮箱：链接道Email地址 -->
+	<div>
+		<a href="mailto:15989144290@163.com">联系我们</a>
+		<a href="tel:15989144290">手机号</a>
+		<a href="mailto:15989144290@163.com,183858128@qq.com">联系我们</a><!-- 邮箱地址可以是多个的 -->
+		<a href="mailto:15989144290@163.com?cc=admin@188.com&subject=建议&body=body...">联系我们（抄送）</a>
+	</div>
+	<!-- 强调 -->
+	<div>
+		<em>强调协调</em>
+		<strong>最强的强调</strong>
+	</div>
+
+	<!-- 换行 -->
+	<div>
+		<p>你们好！你好。。。。。</p>
+		<p>你们好！<br>你好。。。。。</p>
+	</div>
+	<!-- 文本 -->
+	<div>
+		<!-- 引用 -cite    -q标签 -->
+		<cite>learn more study less</cite>说一个人<q>学得少</q>，是说这个人学习时间花得少；<q>会的多</q>是指学习的效果好。
+		<br>
+		<!-- 代码 -code标签 -->
+		<code>
+			function say(){
+				alert("hello world");
+			}
+		</code>
+		<br>
+		<!-- 格式化 -b -i标签 -->
+		<b>hello world！</b>粗体<br>
+		<i>hello world！</i>斜体
+	</div>
+
+</body>
+</html>

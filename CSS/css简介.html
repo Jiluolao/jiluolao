@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css简介</title>
+
+	<style>
+	/*
+	*time:2017.09.21;
+	*author:jiluolao;
+	*
+	*/
+	.property{background-color: #0bb;}
+	.pseudo{background-color: #0e0;}
+/*属性选择器-[att]*/
+		[disabled]{background-color: #666;}
+/*属性选择器-[att=val] 类似于id选择器*/
+		[type=button]{color: #f00;}
+/*属性选择器-[att~=val] 选中class中所带有sports的元素，类似于class选择器*/
+		[class~=sports]{color: #dd0;}
+/*属性选择器-[att|=val] 选中以en单词开头 ——分隔开的 元素*/
+		[lang|=en]{color: #660;background-color: #ccc;}
+/*属性选择器-[att^=val] 以某字符开始的选择元素*/
+		[href^="#"]{color: #f77;}
+/*属性选择器-[att$=val] 以某些值结尾的选择元素*/
+		[href$=pdf]{color: red;}
+/*属性选择器-[att*=val] 属性值包含某些值的元素*/
+		[href*="www.baidu.com"]{color: #e8e;}
+
+		/*伪类选择器*/
+		.pseudo a:link{color: gray;}
+		.pseudo a:visited{color: red;}
+		.pseudo a:hover{color: green;}
+		.pseudo a:active{color: orange;}
+
+		li:first-child{color: #0ff;}/*选择第一项*/
+		li:last-child{color: #ffd;}/*选择最后一项*/
+		li:nth-child(even){color: #ddd;}/*选择偶数项*/
+		li:nth-child(3n+1){}/*选中第一第四。。。项*/
+		li:nth-last-child(3n+1){}/*可以倒过来选*/
+
+		div :only-child{color: red;}/*选中只有一项的元素*/
+
+		dd:first-of-type{color: red;}/*选中第一个dd的元素*/
+		dt:last-of-type{color: green;}/*选中最后一个dt的元素*/
+		dd:nth-of-type(even){color: gray;}/*选中偶数项*/
+		dt:nth-last-of-type(2n){}/*选中倒数偶数项*/
+		span:only-of-type{background-color: #ffd;color:red;}/*选中p标签中只有一个span标签的元素*/
+	</style>
+</head>
+<body>
+	<h2>CSS历史</h2>
+	<h2>CSS引入</h2>
+<!-- css属性选择器 -->
+	<div class="property">
+		<h3>属性选择器</h3>
+
+		<form action="/login">
+			<!-- 属性选择器-[att] -->
+			<div>
+				<input disabled type="text" value="jiluolao">
+			</div>
+			<div>
+				<input type="password" placeholder="密码">
+			</div>
+			<!-- 属性选择器-[att] -->
+			<!-- 属性选择器-[att=val] -->
+			<input type="text" value="文本框">
+			<input type="button" value="按钮">
+
+		</form>
+
+		<!-- 属性选择器-[att~=val] 选中class中所带有sports的元素-->
+		<h2 class="title sports">标题</h2>
+		<p class="sports">内容...</p>
+
+		<!-- 属性选择器-[att|=val] 选中以en单词开头 ——分隔开的 元素-->
+		<p lang="en">hello!</p>
+		<p lang="en-us">hello!</p>
+		<p lang="en-au">hello!</p>
+		<p lang="enfr">hello!</p>
+		<p lang="cy-en">hello!</p>
+
+		<!-- 属性选择器-[att^=val] 以某字符开始的选择元素-->
+		<div>
+			<a href="http://www.w3.org">w3c</a>
+			<a href="#html">html</a>
+			<a href="#css">css</a>
+		</div>
+		<!-- 属性选择器-[att$=val] 以某些值结尾的选择元素 -->
+		<a href="http://xxx.pdf">pdf文档</a>
+		<a href="http://xxx.doc">doc文档</a>
+		<!-- 属性选择器-[att*=val] 属性值包含某些值的元素 -->
+		<a href="http://www.baidu.com/10.html">百度一下</a>
+		<a href="http://www.baidu.com/15.html">百度网盘</a>
+		<a href="http://www.mooc.com/10.html">慕课网</a>
+		<a href="http://www.mooc.com/15.html">慕课网盘</a>
+	</div>
+<!-- 伪类选择器 -->
+	<div class="pseudo"><a href="http://www.163.com" target="_blank">网易首页</a></div>
+	<p>:enabled表示一个元素可以用的状态</p>
+	<p>:disabled表示一个元素不可用的状态</p>
+	<p>:checkeded表示一个元素被选中的状态</p>
+	<p>:first-child{}</p>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<div><ul>
+		<li>只有一项的元素</li>
+	</ul>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+	</ul></div>
+	<div>
+		<dt>1</dt>
+		<dd>2</dd>
+		<dd>3</dd>
+		<dt>4</dt>
+		<dd>5</dd>
+	</div>
+
+	<p><span>一个span</span>加<span>一个span</span></p>
+	<p><span>一个span</span>和<em>一个em</em></p>
+
+	<h2>不常用到伪类选择器</h2>
+	<p>:empty选中像&lt;p&gt;&lt;/p&gt;空标签的元素，里面没有内容的</p>
+	<p>:root选中html根标签</p>
+	<p>:not()和:target()和:lang() </p>
+</body>	
+</html>
