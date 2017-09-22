@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css伪元素选择器</title>
+    <style>
+      .box1 ::first-letter{color: red;}/*第一个字符变样式*/
+      .box1 ::first-line{color: #ccc;}/*第一行变为灰色*/
+      .box1 p::before{content: "这是只作用p标签的";}
+      .box1 p::after{content: "那是";}
+      .selection ::selection{color:red;background-color:#777;}/*即为用户用鼠标选择文字时样式发生改变*/
+      /*后代选择器和子选择器*/
+      .main h2{color:#eee;}
+      .main>h2{color:red;}/*子选择器*/
+
+      /*相邻兄弟选择器*/
+      h2+p+p{color:blue;}
+
+      .ty h2~p{color: #f0d;}
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>css伪元素选择器是...<br>css伪元素选择器是...</p>
+    </div>
+
+    <div class="selection">
+      <p>::selection伪元素选择器应用于被用户选中的内容。</p>
+    </div>
+    <!-- 组合选择器 -->
+    <!-- 后代选择器和子选择器 -->
+    <div class="main">
+      <h2>标题一</h2>
+      <!-- <h2>dd</h2> -->
+      <div>
+        <h2>标题二</h2>
+        <p>段落一</p>
+      </div>
+    </div>
+    <!-- 相邻兄弟选择器 -->
+    <div>
+      <h2>biaot</h2>
+      <p>duanb1</p>
+      <p>sdsdsdd</p>
+    </div>
+    <!-- 通用兄弟选择器 -->
+    <div class="ty">
+      <p>dddsd</p>
+      <h2>biaot</h2>
+      <p>duanb1</p>
+      <p>sdsdsdd</p>
+    </div>
+
+    <p>选择器分组</p>
+  </body>
+</html>
