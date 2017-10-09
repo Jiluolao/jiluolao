@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jiluolao杂货铺</title>
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/site.css">
+	<script src="js/modernizr.js"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	
 	<!-- 浏览器兼容性脚本 -->
   <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -17,10 +17,118 @@
   <![endif]-->
 </head>
 <body>
-	<h1>积箩佬博客</h1>
+	<!-- <h1>积箩佬博客</h1>
 	<header class="page-header">
-		cdn test
+		<a href="#">cdn test</a>
+	</header> -->
+	<ul class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNav" aria-expanded="false">
+	        <!-- <span class="sr-only">Toggle navigation</span> -->
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home">Jiluolao</span></a>
+	    </div>
+			<div class="collapse navbar-collapse" id="divNav">
+				<ul class="nav navbar-nav">
+					<li><a href="#info">关于我</a></li>
+					<li><a href="#intention">求职意向</a></li>
+					<li><a href="#works">作品集</a></li>
+					<li><a href="#skill">技能掌握</a></li>
+					<li><a href="#experience">我的经历</a></li>
+					<li><a href="#contact">联系我</a></li>
+				</ul>
+			</div>
+		</div>
+	</ul>
+	<header class="page-header">
+		<h1>Jiluolao <small>Resume online</small></h1>
 	</header>
+	<div class="divContent">
+		<!-- 关于我 -->
+		<div class="row">
+			<h2 id="info" class="lead">关于我</h2>
+			<div class="row text-center">
+				<blockquote>
+					<h2>Jiluolao</h2>
+					<footer>web前端工程师</footer>
+				</blockquote>
+				<div class="row text-center">
+					<img src="images/me.jpg" alt="me" class="img-responsive img-circle img-thumbnail" width="200">
+				</div>
+				<hr>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<p>我叫黄志杰，23岁，坐标广州，是一名前端工程师。前端是一门有容乃大的行业，我并不是计算机专业出生。
+						在自学前端之前，唯一接触过的就是大学里的C语言。庆幸的是JS与C很相像，给我很大的信心来学习。</p>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<!-- 求职意向 -->
+		<div class="row">
+			<h2 id="intention" class="lead">求职意向</h2>
+			<div id="section3" class="section">
+                <h2>求职意向</h2>
+                <hr>
+                <div class="container center fades">
+                    <div class="col-md-3 col-xs-6 skill-ps skill">
+                        <img src="image/web.png" alt="切图">
+                        <p class="ptitle">PS切图</p>
+                        <p>从PSD上切出页面需要的图片</p>
+                        <p>将小图标合成spirts优化。</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-web skill">
+                        <img src="image/css.png" alt="css">
+                        <p class="ptitle">网页制作</p>
+                        <p>响应式页面,简单不冗余代码。</p>
+                        <p>css3流畅动画效果，兼容不同浏览器。</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-js skill">
+                        <img src="image/js.png" alt="js">
+                        <p class="ptitle">前端功能</p>
+                        <p>用JS完成常见的前端功能特效</p>
+                        <p>用AJAX读取后台数据。</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-h5 skill">
+                        <img src="image/h5.png" alt="h5">
+                        <p class="ptitle">h5页面</p>
+                        <p>移动端页面的书写</p>
+                        <p>兼容平板、安卓、IOS不同终端。</p>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+		<!-- 作品集 -->
+		<div class="row">
+			<h2 id="works" class="lead">作品集</h2>
+			<div class="col-sm-8">
+				作品
+			</div>
+			<div class="col-sm-4">
+				视频
+			</div>
+		</div>
+		<!-- 技能掌握 -->
+		<div class="row">
+			<h2 id="skill" class="lead">技能掌握</h2>
+		</div>
+		<!-- 我的经历 -->
+		<div class="row">
+			<h2 id="experience" class="lead">我的经历</h2>
+		</div>
+		<!-- 联系我 -->
+		<div class="row">
+			<h2 id="contact" class="lead">联系我</h2>
+		</div>
+	</div>
+	<footer class="text-center">
+		<span>&copy;2017 jiluolao All rights reserved.</span>
+	</footer>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 </body>

@@ -1,0 +1,22 @@
+body{
+  padding: 70px;
+}
+header,footer,nav,div,section,aside,article{
+  border: 0 dotted #f0f0f0;
+  border-radius: 5px;
+}
+a,a:hover,abbr{
+  text-decoration: none;
+}
+.divContent{
+  min-height: 350px;
+}
+/*.jumbotron{
+  background-color: #fdfdfd;
+}*/
+.navbar-nav > li > a{
+  line-height: 28px;
+}
+.nav li{
+  text-align: center;
+}
