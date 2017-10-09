@@ -14,7 +14,7 @@ a,a:hover,abbr{
 /*.jumbotron{
   background-color: #fdfdfd;
 }*/
-.divContent .row{
+.divContent>.row{
   min-height: 700px;
 }
 .navbar-nav > li > a{
