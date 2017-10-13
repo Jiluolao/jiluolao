@@ -17,9 +17,44 @@ a,a:hover,abbr{
 .divContent>.row{
   min-height: 700px;
 }
+.info-bg{
+  background-image: url(../images/achivements-bg.jpg);
+  /*height: 590px;
+  position: relative;*/
+  width: 100%;
+  background-attachment: fixed;
+  /*min-width: 650px;*/
+  background-repeat: no-repeat;
+  background-position: 50% auto;
+  /*background-size: 100%;*/
+}
+.skill-bg{
+  background-image: url(../images/img_bg2.jpg);
+  /*height: 590px;*/
+  /*position: relative;*/
+  /*width: 100%;*/
+  background-attachment: fixed;
+  /*min-width: 650px;*/
+  background-repeat: no-repeat;
+  /*background-position: 50% 0;
+  background-size: 100%;*/
+}
 .navbar-nav > li > a{
   line-height: 28px;
 }
 .nav li{
   text-align: center;
+}
+
+.row .lead{
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+.row .hr{
+  width: 70px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #52de23;
+  margin-top: -21px;
 }
