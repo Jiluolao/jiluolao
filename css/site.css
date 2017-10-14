@@ -1,5 +1,6 @@
 body{
   padding: 70px;
+  background-color: #e9eaec;
 }
 header,footer,nav,div,section,aside,article{
   border: 0 dotted #f0f0f0;
@@ -29,7 +30,7 @@ a,a:hover,abbr{
   /*background-size: 100%;*/
 }
 .skill-bg{
-  background-image: url(../images/img_bg2.jpg);
+  background-image: url(../images/skills-bg.jpg);
   /*height: 590px;*/
   /*position: relative;*/
   /*width: 100%;*/
@@ -50,6 +51,9 @@ a,a:hover,abbr{
   font-size: 26px;
   font-weight: bold;
   text-align: center;
+}
+hr{
+  border: 1px solid rgba(0,0,0,0);
 }
 .row .hr{
   width: 70px;
