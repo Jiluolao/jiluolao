@@ -73,9 +73,16 @@ hr{
   margin-bottom: 10px;
 }
 #worksshow2{
-  background-color: #ccc;
+  background-color: #e2eaed;
   padding-top: 10px;
 }
 #worksshow2 .col-md-6{
   margin-bottom: 10px;
+}
+#worksshow2 .col-md-6 img{
+  border: 2px solid #fff;
+}
+#worksshow2 .col-md-6 img:hover{
+  background-color: #f00;
+  border-color: #f0f;
 }
