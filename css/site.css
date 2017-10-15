@@ -64,6 +64,18 @@ hr{
 }
 
 /*
+*求职意向
+*time：2017.10.14
+*author：Jiluolao
+*/
+p.ptitle{
+  color: #E87E04;
+  margin: 2em 0 1em;
+  font-size: 16px;
+  font-family: "SimHei";
+}
+
+/*
 *作品集
 *time：2017.10.15
 *author：Jiluolao
