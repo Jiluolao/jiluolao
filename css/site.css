@@ -16,9 +16,9 @@ a,a:hover,abbr{
   background-color: #fdfdfd;
 }*/
 .divContent>.row{
-  min-height: 700px;
+  min-height: 690px;
 }
-.info-bg{
+.intention-bg{
   background-image: url(../images/achivements-bg.jpg);
   /*height: 590px;
   position: relative;*/
@@ -61,4 +61,21 @@ hr{
   text-align: center;
   border-bottom: 2px solid #52de23;
   margin-top: -21px;
+}
+
+/*
+*作品集
+*time：2017.10.15
+*author：Jiluolao
+*/
+#worksshow1{
+  /*border: 2px solid #666;*/
+  margin-bottom: 10px;
+}
+#worksshow2{
+  background-color: #ccc;
+  padding-top: 10px;
+}
+#worksshow2 .col-md-6{
+  margin-bottom: 10px;
 }
