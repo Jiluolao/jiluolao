@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jiluolao杂货铺</title>
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.eeyellow.Timeline.css" />
 	<link rel="stylesheet" href="css/site.css">
 	<link rel="shortcut icon" type="ico" href="favicon.ico" />
 	<script src="js/modernizr.js"></script>
@@ -197,7 +198,90 @@
 			<h2  class="lead">我的经历</h2>
 			<hr class="hr">
 			<div class="row">
-	      
+				<div class="col-md-12">
+					<div class="VivaTimeline">
+						<dl>
+							<dt>May 2017</dt>
+							<dd class="pos-left clearfix">
+								<div class="circ"></div>
+								<div class="time">FEB 03</div>
+								<div class="events">
+									<div class="events-header">北斗互娱</div>
+									<div class="events-body">
+										<div class="row">
+											<div class="col-md-6 pull-left">
+												<img class="events-object img-responsive img-rounded" src="images/dog01.png" alt="meitu">
+											</div>
+											<div class="events-desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 pull-left">
+												<img class="events-object img-responsive img-rounded" src="images/dog02.png" alt="meitu">
+											</div>
+											<div class="events-desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-6 pull-left">
+												<img class="events-object img-responsive img-rounded" src="images/dog03.png" alt="meitu">
+											</div>
+											<div class="events-desc">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</div>
+										</div>
+									</div>
+									<div class="events-footer">
+
+									</div>
+								</div>
+							</dd>
+
+							<dt>9/2014--7/2017</dt>
+              <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="time">Jan 21</div>
+                <div class="events">
+                  <div class="events-header">广东交通职业技术学院</div>
+                  <div class="events-body">
+                    <div class="row">
+                      <div class="col-md-6 pull-left">
+                        <img class="events-object img-responsive img-rounded" src="images/cat01.png" />
+                      </div>
+                      <div class="events-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 pull-left">
+                        <img class="events-object img-responsive img-rounded" src="images/cat02.png" />
+                      </div>
+                      <div class="events-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 pull-left">
+                        <img class="events-object img-responsive img-rounded" src="images/cat03.png" />
+                      </div>
+                      <div class="events-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="events-footer">
+
+                  </div>
+                </div>
+              </dd>
+						</dl>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- 联系我 -->
 		<div class="row" id="contact">
@@ -218,5 +302,14 @@
 	</footer>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.VivaTimeline').vivaTimeline({
+                carousel: true,
+                carouselTime: 3000
+            });
+        });
+    </script>
 </body>
 </html>
