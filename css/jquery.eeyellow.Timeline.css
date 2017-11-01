@@ -98,13 +98,13 @@
 }
 
 .VivaTimeline dl dd .events .events-body {
-    overflow: hidden;
+    overflow-x: hidden;
     zoom: 1;
     background-color: #EEE;
-    padding: 10px;    
+    padding: 10px;
 }
 .VivaTimeline dl dd .events .events-body .row{
-    display:none;  
+    display:none;
 }
 
 .VivaTimeline dl dd .events .events-body .events-desc {
@@ -116,16 +116,16 @@
     text-align:center;
 }
 .VivaTimeline dl dd .events .events-footer ol {
-    list-style: none; 
-    margin: 0 auto; 
+    list-style: none;
+    margin: 0 auto;
     padding: 0;
 }
 .VivaTimeline dl dd .events .events-footer ol li {
-    background: #32b487; 
-    border-radius: 5px; 
-    margin: 10px; 
-    display: inline-block; 
-    width: 10px; 
+    background: #32b487;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 10px;
     height: 10px;
     cursor: pointer;
 }
